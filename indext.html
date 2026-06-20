@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/output.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -740,13 +740,17 @@
         </div>
       </div>
     </section>
-    <footer class="max-w-[1200px] m-auto">
+    <footer class="mx-w-[1200px] m-auto">
       <div
-        class="px-[16px] py-[40px] border-t border-gray-100 grid grid-cols-1 md:grid-cols-[1fr_auto_auto_auto] gap-[40px] items-start"
+        class="flex flex-col md:flex-row md:justify-between md:items-start gap-[40px] md:justify-center"
       >
-        <div class="flex flex-col gap-[16px]">
+        <div class="flex flex-col gap-[16px] md:w-[300px]">
           <div class="flex items-center gap-[12px]">
-            <img src="./img/Стол-плюс-footer-1 1.png" alt="Стол Плюс" />
+            <img
+              src="./img/Стол-плюс-footer-1 1.png"
+              alt="Стол Плюс"
+              class="object-contain"
+            />
           </div>
           <div class="space-y-[4px]">
             <p class="text-[13px] font-bold text-[#99cc33]">
@@ -764,7 +768,7 @@
           >
             Каталог
           </h4>
-          <div class="grid grid-cols-1 gap-[8px] text-[13px] text-gray-600">
+          <div class="flex flex-col gap-[8px] text-[13px] text-gray-600">
             <span class="cursor-pointer">Мебель из массива</span>
             <span class="cursor-pointer">Столы</span>
             <span class="cursor-pointer">Стулья</span>
@@ -782,7 +786,7 @@
           >
             Помощь
           </h4>
-          <div class="grid grid-cols-1 gap-[8px] text-[13px] text-gray-600">
+          <div class="flex flex-col gap-[8px] text-[13px] text-gray-600">
             <span class="cursor-pointer">Мебель из массива</span>
             <span class="cursor-pointer">Столы</span>
             <span class="cursor-pointer">Стулья</span>
@@ -797,14 +801,14 @@
           >
             Контакты
           </h4>
-          <div class="grid grid-cols-1 gap-[8px] text-[13px] text-gray-600">
+          <div class="flex flex-col gap-[8px] text-[13px] text-gray-600">
             <span>г. Воронеж Бульвар Победы 23Б</span>
             <span class="font-bold text-gray-950">+7 (961) 181-69-70</span>
             <span>mailto:stolplus@mail.ru</span>
+            <span>Время работы: 10:00-21:00</span>
           </div>
         </div>
       </div>
     </footer>
-
   </body>
 </html>
